@@ -12,7 +12,8 @@ struct ContentView: View {
         VStack {
             Text("mooooooo")
             .imageScale(.large)
-                .foregroundStyle(.tint)
+            .foregroundStyle(.brown)
+//                .foregroundStyle(.tint)
             Text("Hello, world!")
         }
         .padding()
