@@ -12,6 +12,7 @@ struct daishogiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+
         }
     }
 }

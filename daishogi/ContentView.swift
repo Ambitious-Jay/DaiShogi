@@ -9,14 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("mooooooo")
-            .imageScale(.large)
-            .foregroundStyle(.brown)
-//                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        chessBoard()
     }
 }
 
