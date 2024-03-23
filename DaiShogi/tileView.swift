@@ -22,6 +22,14 @@ struct tileView: View {
                 .frame(width: widthHeight, height: widthHeight)
         }
     }
+    var numberRow: some View {
+        Text("\(position.row)")
+            .frame(width: widthHeight, height: widthHeight)
+    }
+    var numberCol: some View {
+        Text("\(position.col)" != "16" ? "\(position.col)" : " ")
+            .frame(width: widthHeight, height: widthHeight)
+    }
 }
 
 #Preview {
