@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var boardstate = boardState()
-    @State var board = [[0, 0, 0, 0, 0],[0, 0, 0, 0, 0],[0, 0, 0, 0, 0],[0, 0, 0, 0, 0]]
     var body: some View {
         chessBoard()
             .padding()

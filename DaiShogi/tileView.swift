@@ -16,6 +16,8 @@ struct tileView: View {
     let widthHeight = 50.0
     let posOnBoard: (row: Int, col: Int)
     let tileNum: Int
+//    let tileID: Int
+    
     init(posOnBoard: (row: Int, col: Int)) {
         self.posOnBoard = posOnBoard
         tileNum = (posOnBoard.row - 1) * 15 + posOnBoard.col
@@ -27,8 +29,9 @@ struct tileView: View {
                 .foregroundStyle(Color.beigie)
                 .frame(width: widthHeight, height: widthHeight)
                 .overlay {
-                    Text("\(tileNum)")
-                        .foregroundStyle(.black)
+//                    Text("\(tileNum)")
+//                        .foregroundStyle(.black)
+                    violentOx()
                 }
         }
     }

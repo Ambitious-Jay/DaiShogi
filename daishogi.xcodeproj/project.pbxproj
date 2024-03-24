@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B9A11DE2BB0078E0028B9D1 /* violentOx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */; };
 		F72AAAF52BA221260023E7C7 /* daishogiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AAAF42BA221260023E7C7 /* daishogiApp.swift */; };
 		F72AAAF72BA221260023E7C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AAAF62BA221260023E7C7 /* ContentView.swift */; };
 		F72AAAF92BA2212A0023E7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72AAAF82BA2212A0023E7C7 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = violentOx.swift; sourceTree = "<group>"; };
 		F72AAAF12BA221260023E7C7 /* daishogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daishogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72AAAF42BA221260023E7C7 /* daishogiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daishogiApp.swift; sourceTree = "<group>"; };
 		F72AAAF62BA221260023E7C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B9A11DC2BB007630028B9D1 /* specificPieces */ = {
+			isa = PBXGroup;
+			children = (
+				7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */,
+			);
+			path = specificPieces;
+			sourceTree = "<group>";
+		};
 		F72AAAE82BA221260023E7C7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		F72AAAF32BA221260023E7C7 /* daishogi */ = {
 			isa = PBXGroup;
 			children = (
+				7B9A11DC2BB007630028B9D1 /* specificPieces */,
 				F72AAAF42BA221260023E7C7 /* daishogiApp.swift */,
 				F72AAAF62BA221260023E7C7 /* ContentView.swift */,
 				F73D693B2BAD5B2D004F65EF /* chessBoard.swift */,
@@ -119,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "daishogi" */;
+			buildConfigurationList = F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "DaiShogi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,6 +167,7 @@
 			files = (
 				F72AAAF72BA221260023E7C7 /* ContentView.swift in Sources */,
 				F73D69442BAFF0F2004F65EF /* helperBits.swift in Sources */,
+				7B9A11DE2BB0078E0028B9D1 /* violentOx.swift in Sources */,
 				F72AAAF52BA221260023E7C7 /* daishogiApp.swift in Sources */,
 				F73D693E2BAD5BC3004F65EF /* tileView.swift in Sources */,
 				F73D69402BAFDE42004F65EF /* boardState.swift in Sources */,
@@ -348,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "daishogi" */ = {
+		F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "DaiShogi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AAAFE2BA2212A0023E7C7 /* Debug */,

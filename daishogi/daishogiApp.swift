@@ -16,3 +16,4 @@ struct daishogiApp: App {
         }
     }
 }
+//work on pieces *not movese*
