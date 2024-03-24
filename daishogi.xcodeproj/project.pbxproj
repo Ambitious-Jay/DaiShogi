@@ -13,6 +13,9 @@
 		F72AAAFC2BA2212A0023E7C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72AAAFB2BA2212A0023E7C7 /* Preview Assets.xcassets */; };
 		F73D693C2BAD5B2D004F65EF /* chessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D693B2BAD5B2D004F65EF /* chessBoard.swift */; };
 		F73D693E2BAD5BC3004F65EF /* tileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D693D2BAD5BC3004F65EF /* tileView.swift */; };
+		F73D69402BAFDE42004F65EF /* boardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D693F2BAFDE42004F65EF /* boardState.swift */; };
+		F73D69422BAFE9AC004F65EF /* pieceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D69412BAFE9AC004F65EF /* pieceStruct.swift */; };
+		F73D69442BAFF0F2004F65EF /* helperBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73D69432BAFF0F2004F65EF /* helperBits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F72AAAFD2BA2212A0023E7C7 /* daishogi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = daishogi.entitlements; sourceTree = "<group>"; };
 		F73D693B2BAD5B2D004F65EF /* chessBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = chessBoard.swift; path = DaiShogi/chessBoard.swift; sourceTree = SOURCE_ROOT; };
 		F73D693D2BAD5BC3004F65EF /* tileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tileView.swift; path = DaiShogi/tileView.swift; sourceTree = SOURCE_ROOT; };
+		F73D693F2BAFDE42004F65EF /* boardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = boardState.swift; path = DaiShogi/boardState.swift; sourceTree = SOURCE_ROOT; };
+		F73D69412BAFE9AC004F65EF /* pieceStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pieceStruct.swift; path = DaiShogi/pieceStruct.swift; sourceTree = SOURCE_ROOT; };
+		F73D69432BAFF0F2004F65EF /* helperBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = helperBits.swift; path = DaiShogi/helperBits.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				F72AAAF42BA221260023E7C7 /* daishogiApp.swift */,
 				F72AAAF62BA221260023E7C7 /* ContentView.swift */,
 				F73D693B2BAD5B2D004F65EF /* chessBoard.swift */,
+				F73D693F2BAFDE42004F65EF /* boardState.swift */,
+				F73D69432BAFF0F2004F65EF /* helperBits.swift */,
+				F73D69412BAFE9AC004F65EF /* pieceStruct.swift */,
 				F73D693D2BAD5BC3004F65EF /* tileView.swift */,
 				F72AAAF82BA2212A0023E7C7 /* Assets.xcassets */,
 				F72AAAFD2BA2212A0023E7C7 /* daishogi.entitlements */,
@@ -146,9 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72AAAF72BA221260023E7C7 /* ContentView.swift in Sources */,
+				F73D69442BAFF0F2004F65EF /* helperBits.swift in Sources */,
 				F72AAAF52BA221260023E7C7 /* daishogiApp.swift in Sources */,
 				F73D693E2BAD5BC3004F65EF /* tileView.swift in Sources */,
+				F73D69402BAFDE42004F65EF /* boardState.swift in Sources */,
 				F73D693C2BAD5B2D004F65EF /* chessBoard.swift in Sources */,
+				F73D69422BAFE9AC004F65EF /* pieceStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

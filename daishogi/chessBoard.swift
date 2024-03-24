@@ -8,28 +8,35 @@
 import SwiftUI
 
 struct chessBoard: View {
+    
+    @EnvironmentObject var boardstate: boardState
+    
     var body: some View {
-        VStack(spacing: 1) {
-            ForEach(0..<16) { row in
-                if row == 0 {
-                    HStack(spacing: 1) {
-                        ForEach(1..<17) { col in
-                            tileView(position: (row: row, col: col)).numberCol
+        
+            
+            VStack(spacing: 1) {
+                ForEach(0..<16) { row in
+                    if row == 0 {
+                        HStack(spacing: 1) {
+                            
+                            ForEach(0..<16) { col in
+                                tileView(posOnBoard: (row: row, col: 15 - col)).numberCol
+                            }
                         }
-                    }
-                } else {
-                    HStack(spacing: 1) {
-                        ForEach(1..<16) { col in
-                            tileView(position: (row, col))
+                    } else {
+                        HStack(spacing: 1) {
+                            ForEach((1..<16)) { col in
+                                boardstate.boardLayout[row - 1][col - 1]
+                            }
+                            tileView(posOnBoard: (row: row, col: 0)).numberRow
+                            
                         }
-                        tileView(position: (row: row, col: 16)).numberRow
                         
                     }
                     
                 }
-                
             }
-        }
+            
     }
 }
 

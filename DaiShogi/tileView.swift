@@ -14,24 +14,32 @@ extension Color {
 
 struct tileView: View {
     let widthHeight = 50.0
-    let position: (row: Int, col: Int)
+    let posOnBoard: (row: Int, col: Int)
+    let tileNum: Int
+    init(posOnBoard: (row: Int, col: Int)) {
+        self.posOnBoard = posOnBoard
+        tileNum = (posOnBoard.row - 1) * 15 + posOnBoard.col
+    }
+    
     var body: some View {
         VStack {
             Rectangle()
                 .foregroundStyle(Color.beigie)
                 .frame(width: widthHeight, height: widthHeight)
+                .overlay {
+                    Text("\(tileNum)")
+                        .foregroundStyle(.black)
+                }
         }
     }
     var numberRow: some View {
-        Text("\(position.row)")
+        Text("\(posOnBoard.row)")
             .frame(width: widthHeight, height: widthHeight)
     }
     var numberCol: some View {
-        Text("\(position.col)" != "16" ? "\(position.col)" : " ")
+        Text("\(posOnBoard.col)" != "0" ? "\(posOnBoard.col)" : " ")
             .frame(width: widthHeight, height: widthHeight)
     }
 }
 
-#Preview {
-    tileView(position: (0, 0))
-}
+
