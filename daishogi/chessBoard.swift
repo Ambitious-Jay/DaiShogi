@@ -26,17 +26,14 @@ struct chessBoard: View {
                     } else {
                         HStack(spacing: 1) {
                             ForEach((1..<16)) { col in
-                                boardstate.boardLayout[row - 1][col - 1]
+                                boardstate.boardLayout[((row - 1) * 15 + col) - 1]
                             }
                             tileView(posOnBoard: (row: row, col: 0)).numberRow
                             
-                        }
-                        
                     }
-                    
                 }
             }
-            
+        }
     }
 }
 

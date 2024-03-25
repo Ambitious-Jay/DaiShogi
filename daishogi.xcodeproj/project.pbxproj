@@ -72,13 +72,13 @@
 		F72AAAF32BA221260023E7C7 /* daishogi */ = {
 			isa = PBXGroup;
 			children = (
-				7B9A11DC2BB007630028B9D1 /* specificPieces */,
 				F72AAAF42BA221260023E7C7 /* daishogiApp.swift */,
 				F72AAAF62BA221260023E7C7 /* ContentView.swift */,
 				F73D693B2BAD5B2D004F65EF /* chessBoard.swift */,
 				F73D693F2BAFDE42004F65EF /* boardState.swift */,
 				F73D69432BAFF0F2004F65EF /* helperBits.swift */,
 				F73D69412BAFE9AC004F65EF /* pieceStruct.swift */,
+				7B9A11DC2BB007630028B9D1 /* specificPieces */,
 				F73D693D2BAD5BC3004F65EF /* tileView.swift */,
 				F72AAAF82BA2212A0023E7C7 /* Assets.xcassets */,
 				F72AAAFD2BA2212A0023E7C7 /* daishogi.entitlements */,
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "DaiShogi" */;
+			buildConfigurationList = F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "daishogi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -360,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "DaiShogi" */ = {
+		F72AAAEC2BA221260023E7C7 /* Build configuration list for PBXProject "daishogi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72AAAFE2BA2212A0023E7C7 /* Debug */,

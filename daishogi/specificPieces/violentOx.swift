@@ -19,21 +19,22 @@ import SwiftUI
 //    }
 //}
 
-struct violentOx: View {
-    let name = "猛牛"
-    var body: some View {
-        
-            
-            
-                Rectangle()
-                    .foregroundStyle(.black)
-                    .overlay {
-                        Text(name)
-                            
-                            .minimumScaleFactor(0.4)
-                            .foregroundStyle(.white)
-                    }
-                    .padding()
-            
-    }
-}
+//struct violentOx: View, Piece {
+//    var pieceName: String = "猛牛"
+//    
+//    var body: some View {
+//        
+//            
+//            
+//                Rectangle()
+//                    .foregroundStyle(.black)
+//                    .overlay {
+//                        Text(name)
+//                            
+//                            .minimumScaleFactor(0.1)
+//                            .foregroundStyle(.white)
+//                    }
+//                    .padding()
+//            
+//    }
+//}

@@ -11,9 +11,21 @@ import SwiftUI
 struct daishogiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Rectangle()
+                    .foregroundStyle(.clear)
+                    .background(VisualEffect())
+                ContentView()
+                
+            }
+                
 
         }
     }
+}
+
+struct VisualEffect: NSViewRepresentable {
+    func makeNSView(context: Self.Context) -> NSView { return NSVisualEffectView() }
+    func updateNSView(_ nsView: NSView, context: Context) { }
 }
 //work on pieces *not movese*

@@ -29,9 +29,7 @@ struct tileView: View {
                 .foregroundStyle(Color.beigie)
                 .frame(width: widthHeight, height: widthHeight)
                 .overlay {
-//                    Text("\(tileNum)")
-//                        .foregroundStyle(.black)
-                    violentOx()
+                    
                 }
         }
     }
