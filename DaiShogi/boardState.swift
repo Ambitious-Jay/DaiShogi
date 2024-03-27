@@ -20,5 +20,8 @@ class boardState: ObservableObject {
         }
         self.boardLayout = initialBoardState
     }
+    @Published var validMoves: [Int] = [Int]()
+    @Published var isWhite = true
 }
+
 

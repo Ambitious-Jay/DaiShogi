@@ -16,7 +16,10 @@ struct tileView: View {
     let widthHeight = 50.0
     let posOnBoard: (row: Int, col: Int)
     let tileNum: Int
-//    let tileID: Int
+    @EnvironmentObject var boardstate: boardState
+    
+    
+    var heldPiece: Piece? = nil
     
     init(posOnBoard: (row: Int, col: Int)) {
         self.posOnBoard = posOnBoard

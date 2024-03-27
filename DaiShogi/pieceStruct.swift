@@ -16,7 +16,7 @@ protocol Piece {
     
     var chipView: any View { get set }
     
-    func calculateMoves()
+    func calculateMoves() -> [Int]
     
     func movePiece(newSpot: Int)
 }
@@ -29,16 +29,15 @@ extension Piece {
 //    var chipView =
 }
 
-struct tileLook: View {
-    let tileName: String
-    let style: RoundedCornerStyle
+struct pieceLook: View {
+    let pieceName: String
     var body: some View {
         UnevenRoundedRectangle(cornerRadii: RectangleCornerRadii(topLeading: 13, bottomLeading: 2, bottomTrailing: 2, topTrailing: 13), style: .circular)
             .fill(Color.darkBkg)
-            .shadow(radius: 5, x: 0.8, y: 0.9)
+//            .shadow(radius: 5, x: 0.8, y: 0.9)
             .frame(width: 35, height: 45)
             .overlay {
-                Text(tileName)
+                Text(pieceName)
                     .minimumScaleFactor(0.1)
                     .foregroundStyle(.black)
             }

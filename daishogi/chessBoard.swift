@@ -26,7 +26,27 @@ struct chessBoard: View {
                     } else {
                         HStack(spacing: 1) {
                             ForEach((1..<16)) { col in
-                                boardstate.boardLayout[((row - 1) * 15 + col) - 1]
+                                let arrayPos = ((row - 1) * 15 + col) - 1
+                                
+                                boardstate.boardLayout[arrayPos]
+                                    .overlay {
+                                        
+                                        if col == 1 || row == 2 {
+                                            pieceLook(pieceName: "猛牛")
+                                        }
+                                    }
+                                    .onTapGesture {
+                                        let currentTile = boardstate.boardLayout[arrayPos]
+                                        
+                                        if let currentPiece = currentTile.heldPiece, (currentPiece.isWhite == boardstate.isWhite) {
+                                            let validMoves = currentPiece.calculateMoves()
+                                            boardstate.validMoves = validMoves
+                                        } else {
+                                            
+                                        }
+                                        
+                                    }
+                                    
                             }
                             tileView(posOnBoard: (row: row, col: 0)).numberRow
                             
