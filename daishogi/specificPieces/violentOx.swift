@@ -19,22 +19,19 @@ import SwiftUI
 //    }
 //}
 
-//struct violentOx: View, Piece {
-//    var pieceName: String = "猛牛"
-//    
-//    var body: some View {
-//        
-//            
-//            
-//                Rectangle()
-//                    .foregroundStyle(.black)
-//                    .overlay {
-//                        Text(name)
-//                            
-//                            .minimumScaleFactor(0.1)
-//                            .foregroundStyle(.white)
-//                    }
-//                    .padding()
-//            
-//    }
-//}
+struct violentOx: Piece {
+    var isWhite: Bool
+    
+    func calculateMoves() -> [Int] {
+        return [1,2,3,45]
+    }
+    
+    var pieceName: String = "猛牛"
+    var pieceID: pieceTypes = .violentOx
+    var chipView: any View
+    init(isWhite: Bool) {
+        self.isWhite = isWhite
+        self.chipView = pieceLook(pieceName: self.pieceName)
+    }
+    
+}

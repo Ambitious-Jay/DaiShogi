@@ -11,6 +11,7 @@ import SwiftUI
 
 class boardState: ObservableObject {
     @Published var boardLayout: [tileView]
+    @Published var myHeldPiece: heldPiece? = nil
     init() {
         var initialBoardState = [tileView]()
         for row in 1..<16 {
@@ -18,10 +19,17 @@ class boardState: ObservableObject {
                 initialBoardState.append(tileView(posOnBoard: (row: row, col: col)))
             }
         }
+        initialBoardState[2].heldPiece = violentOx(isWhite: true)
         self.boardLayout = initialBoardState
+        
+        
+        
     }
     @Published var validMoves: [Int] = [Int]()
     @Published var isWhite = true
 }
 
-
+struct heldPiece {
+    let pos: Int
+    let type: Piece
+}

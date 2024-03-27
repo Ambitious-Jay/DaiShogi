@@ -10,22 +10,16 @@ import SwiftUI
 
 protocol Piece {
     var isWhite: Bool { get set }
-    var pieceID: Int { get set }
+    var pieceID: pieceTypes { get set }
     var pieceName: String { get set }
-    var position: Int { get set }
+//    var position: Int { get set }
     
     var chipView: any View { get set }
     
     func calculateMoves() -> [Int]
-    
-    func movePiece(newSpot: Int)
 }
 
 extension Piece {
-    func movePiece(newSpot: Int) {
-//        self.position = newSpot
-    }
-    
 //    var chipView =
 }
 
@@ -42,4 +36,8 @@ struct pieceLook: View {
                     .foregroundStyle(.black)
             }
     }
+}
+
+enum pieceTypes {
+    case violentOx
 }
