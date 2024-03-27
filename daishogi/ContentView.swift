@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var boardstate = boardState()
+    @EnvironmentObject var boardstate: boardState
     var body: some View {
         chessBoard()
             .padding()
-            .environmentObject(boardstate)
             
     }
 }
