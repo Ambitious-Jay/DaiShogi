@@ -10,7 +10,6 @@ import SwiftUI
 struct chessBoard: View {
     
     @EnvironmentObject var boardstate: boardState
-    var mouseLocation: NSPoint { NSEvent.mouseLocation }
 
     
     var body: some View {
@@ -32,7 +31,7 @@ struct chessBoard: View {
                                 boardstate.boardLayout[arrayPos]
                                     .overlay {
                                         if let heldPiece = boardstate.boardLayout[arrayPos].heldPiece {
-                                            pieceLook(pieceName: heldPiece.pieceName)
+                                            heldPiece.chipView
                                         }
                                     }
                                     .onTapGesture {
@@ -68,15 +67,9 @@ struct chessBoard: View {
                     }
                 }
             }
-            if let movingPiece = boardstate.myHeldPiece {
-//                pieceLook(pieceName: movingPiece.pieceName)
-//                    .onTapGesture {
-//                        NSEvent.addLocalMonitorForEvents(matching: [.mouseMoved]) {
-//                        return $0
-//                    }
-//                }
-            }
+            
         }
+        
     }
 }
 

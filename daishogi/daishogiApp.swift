@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct daishogiApp: App {
+    @StateObject var boardstate: boardState = boardState()
+    @State var mouseLocation = CGPoint()
+    @State var isHovering = false
     var body: some Scene {
         WindowGroup {
             ZStack {
@@ -16,10 +19,27 @@ struct daishogiApp: App {
                     .foregroundStyle(.clear)
                     .background(VisualEffect())
                 ContentView()
+                    .environmentObject(boardstate)
                 
             }
-                
-
+            .overlay {
+                if let movingPiece = boardstate.myHeldPiece {
+                    movingPiece.type.chipView
+                        .position(x: mouseLocation.x, y: mouseLocation.y)
+                        .allowsHitTesting(false)
+                }
+            }
+            .onContinuousHover { phase in
+                switch phase {
+                case .active(let location):
+                    withAnimation(.bouncy) {
+                        mouseLocation = location
+                    }
+                    isHovering = true
+                case .ended:
+                    isHovering = false
+                }
+            }
         }
     }
 }

@@ -20,7 +20,9 @@ protocol Piece {
 }
 
 extension Piece {
-//    var chipView =
+    var chipView: pieceLook {
+        pieceLook(pieceName: self.pieceName)
+    }
 }
 
 struct pieceLook: View {
