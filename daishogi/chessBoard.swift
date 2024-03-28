@@ -38,7 +38,11 @@ struct chessBoard: View {
                                         if let movingPiece = boardstate.myHeldPiece {
                                             if (boardstate.validMoves.contains(arrayPos)) {
                                                 // Holding a piece and move to a valid tile
-                                                boardstate.boardLayout[arrayPos].heldPiece = movingPiece.type
+                                                if let promoteForm = movingPiece.type.promotesTo, !movingPiece.type.isPromoted, row == 1 {
+                                                    boardstate.boardLayout[arrayPos].heldPiece = promoteForm
+                                                } else {
+                                                    boardstate.boardLayout[arrayPos].heldPiece = movingPiece.type
+                                                }
                                                 boardstate.boardLayout[movingPiece.pos].heldPiece = nil
                                             } else {
                                                 boardstate.boardLayout[movingPiece.pos].heldPiece = movingPiece.type

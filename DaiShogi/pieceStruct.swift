@@ -9,23 +9,22 @@ import Foundation
 import SwiftUI
 
 protocol Piece {
-    var isWhite: Bool { get set }
-    var pieceID: pieceTypes { get set }
-    var pieceName: String { get set }
-//    var position: Int { get set }
-    
-    var chipView: any View { get set }
-    
+    var isWhite: Bool { get }
+    var pieceID: pieceTypes { get }
+    var promotesTo: Piece? { get }
+    var isPromoted: Bool { get set }
+    var pieceName: String { get }
     func calculateMoves() -> [Int]
 }
 
 extension Piece {
     var chipView: pieceLook {
-        pieceLook(pieceName: self.pieceName)
+        pieceLook(isPromoted: self.isPromoted, pieceName: self.pieceName)
     }
 }
 
 struct pieceLook: View {
+    var isPromoted: Bool
     let pieceName: String
     var body: some View {
         UnevenRoundedRectangle(cornerRadii: RectangleCornerRadii(topLeading: 13, bottomLeading: 2, bottomTrailing: 2, topTrailing: 13), style: .circular)
@@ -35,11 +34,7 @@ struct pieceLook: View {
             .overlay {
                 Text(pieceName)
                     .minimumScaleFactor(0.1)
-                    .foregroundStyle(.black)
+                    .foregroundStyle(isPromoted ? .red : .black)
             }
     }
-}
-
-enum pieceTypes {
-    case violentOx
 }
