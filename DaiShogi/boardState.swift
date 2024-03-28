@@ -19,7 +19,7 @@ class boardState: ObservableObject {
                 initialBoardState.append(tileView(posOnBoard: (row: row, col: col)))
             }
         }
-        initialBoardState[2].heldPiece = violentOx(isWhite: true, isPromoted: false)
+        initialBoardState[2].heldPiece = violentOx(isPromoted: false, isWhite: true)
         self.boardLayout = initialBoardState
         
         

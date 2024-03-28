@@ -76,7 +76,3 @@ struct chessBoard: View {
         
     }
 }
-
-#Preview {
-    chessBoard()
-}

@@ -8,8 +8,6 @@
 import Foundation
 
 struct goldGeneral: Piece {
-    var isWhite: Bool
-    
     func calculateMoves() -> [Int] {
         return [1,2,3,45]
     }
@@ -17,12 +15,9 @@ struct goldGeneral: Piece {
     var pieceName: String = "金将"
     var pieceID: pieceTypes = .goldGeneral
     var promotesTo: Piece? {
-        goldGeneral(isWhite: self.isWhite, isPromoted: true)
-    }
-    var isPromoted: Bool
-    init(isWhite: Bool, isPromoted: Bool) {
-        self.isWhite = isWhite
-        self.isPromoted = isPromoted
+        goldGeneral(isPromoted: true, isWhite: self.isWhite)
     }
     
+    var isPromoted: Bool
+    var isWhite: Bool
 }

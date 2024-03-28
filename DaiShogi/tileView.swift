@@ -45,5 +45,3 @@ struct tileView: View {
             .frame(width: widthHeight, height: widthHeight)
     }
 }
-
-
