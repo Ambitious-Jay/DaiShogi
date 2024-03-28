@@ -1,13 +1,13 @@
 //
-//  violentOx.swift
+//  dragonKing.swift
 //  daishogi
 //
-//  Created by Andrew Jo on 3/24/24.
+//  Created by Zachary Abrahamson  on 3/28/24.
 //
 
 import Foundation
 
-struct violentOx: Piece {
+struct dragonKing: Piece {
     func calculateMoves() -> [Int] {
         var counter = -1
         return Array(repeating: 0, count: 225).map { moo in
@@ -16,8 +16,8 @@ struct violentOx: Piece {
         }
     }
     
-    var pieceName: String = "猛牛"
-    var pieceID: pieceTypes = .violentOx
+    var pieceName: String = "龍王"
+    var pieceID: pieceTypes = .dragonKing
     var promotesTo: Piece? {
         goldGeneral(isPromoted: true, isWhite: self.isWhite)
     }

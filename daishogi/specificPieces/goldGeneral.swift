@@ -9,13 +9,17 @@ import Foundation
 
 struct goldGeneral: Piece {
     func calculateMoves() -> [Int] {
-        return [1,2,3,45]
+        var counter = -1
+        return Array(repeating: 0, count: 225).map { moo in
+            counter += 1
+            return counter
+        }
     }
     
     var pieceName: String = "金将"
     var pieceID: pieceTypes = .goldGeneral
     var promotesTo: Piece? {
-        goldGeneral(isPromoted: true, isWhite: self.isWhite)
+        rook(isPromoted: true, isWhite: self.isWhite)
     }
     
     var isPromoted: Bool
