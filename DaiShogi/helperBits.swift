@@ -15,3 +15,11 @@ import SwiftUI
 enum pieceTypes {
     case angryBoar, bishop, blindTiger, catSword, copperGeneral, dragonHorse, dragonKing, drunkElephant, evilWolf, ferociousLeopard, flyingDragon, flyingOx, flyingStag, freeBoar, goBetween, goldGeneral, hornedFalcon, ironGeneral, king, kirin, knight, lance, lion, pawn, phoenix, prince, queen, reverseChariot, rook, sideMover, silverGeneral, stoneGeneral, soaringEagle, verticleMover, violentOx, whale, whiteHorse
 }
+
+//class nameSpaceObj: ObservableObject {
+//    var namespace: Namespace.ID
+//
+//    init(_ namespace: Namespace.ID) {
+//        self.namespace = namespace
+//    }
+//}

@@ -11,21 +11,27 @@ struct ContentView: View {
     @EnvironmentObject var boardstate: boardState
     @State var mouseLocation = CGPoint()
     @State var isHovering = false
+//    @Namespace var contentLoco
+    
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundStyle(.clear)
-                .background(VisualEffect())
-            chessBoard()
-                .padding()
-            
-        }
-        .overlay {
-            if let movingPiece = boardstate.myHeldPiece {
-                movingPiece.type.chipView
-                    .animation(.snappy, value: mouseLocation)
-                    .position(x: mouseLocation.x, y: mouseLocation.y)
-                    .allowsHitTesting(false)
+            ZStack {
+                Rectangle()
+                    .foregroundStyle(.clear)
+                    .background(VisualEffect())
+                chessBoard()
+//                    .environmentObject(nameSpaceObj(contentLoco))
+                    .padding()
+                
+            }
+            .overlay {
+                if let movingPiece = boardstate.myHeldPiece {
+                    movingPiece.type.chipView
+                        .animation(.snappy, value: mouseLocation)
+                        .position(x: mouseLocation.x, y: mouseLocation.y)
+                        .allowsHitTesting(false)
+//                    .matchedGeometryEffect(id: "movingPiece", in: contentLoco)
+                }
             }
         }
         .onContinuousHover { phase in

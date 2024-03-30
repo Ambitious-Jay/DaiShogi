@@ -10,6 +10,17 @@
 		7B9A11DE2BB0078E0028B9D1 /* violentOx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */; };
 		F70F5D8D2BB5ECF0009E2FF1 /* rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D8C2BB5ECF0009E2FF1 /* rook.swift */; };
 		F70F5D8F2BB5ED46009E2FF1 /* dragonKing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D8E2BB5ED46009E2FF1 /* dragonKing.swift */; };
+		F70F5D912BB60613009E2FF1 /* soaringEagle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D902BB60613009E2FF1 /* soaringEagle.swift */; };
+		F70F5D932BB606BC009E2FF1 /* angryBoar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D922BB606BC009E2FF1 /* angryBoar.swift */; };
+		F70F5D952BB60738009E2FF1 /* bishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D942BB60738009E2FF1 /* bishop.swift */; };
+		F70F5D972BB608F9009E2FF1 /* dragonHorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D962BB608F9009E2FF1 /* dragonHorse.swift */; };
+		F70F5D992BB60956009E2FF1 /* hornedFalcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D982BB60956009E2FF1 /* hornedFalcon.swift */; };
+		F70F5D9B2BB60A34009E2FF1 /* flyingStag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D9A2BB60A34009E2FF1 /* flyingStag.swift */; };
+		F70F5D9D2BB60A90009E2FF1 /* blindTiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D9C2BB60A90009E2FF1 /* blindTiger.swift */; };
+		F70F5D9F2BB60BC3009E2FF1 /* catSword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5D9E2BB60BC3009E2FF1 /* catSword.swift */; };
+		F70F5DA12BB61108009E2FF1 /* copperGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5DA02BB61108009E2FF1 /* copperGeneral.swift */; };
+		F70F5DA32BB611EA009E2FF1 /* sideMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5DA22BB611EA009E2FF1 /* sideMover.swift */; };
+		F70F5DA62BB61230009E2FF1 /* freeBoar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F5DA52BB61230009E2FF1 /* freeBoar.swift */; };
 		F72AAAF52BA221260023E7C7 /* daishogiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AAAF42BA221260023E7C7 /* daishogiApp.swift */; };
 		F72AAAF72BA221260023E7C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AAAF62BA221260023E7C7 /* ContentView.swift */; };
 		F72AAAF92BA2212A0023E7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72AAAF82BA2212A0023E7C7 /* Assets.xcassets */; };
@@ -26,6 +37,17 @@
 		7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = violentOx.swift; sourceTree = "<group>"; };
 		F70F5D8C2BB5ECF0009E2FF1 /* rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rook.swift; sourceTree = "<group>"; };
 		F70F5D8E2BB5ED46009E2FF1 /* dragonKing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragonKing.swift; sourceTree = "<group>"; };
+		F70F5D902BB60613009E2FF1 /* soaringEagle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soaringEagle.swift; sourceTree = "<group>"; };
+		F70F5D922BB606BC009E2FF1 /* angryBoar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angryBoar.swift; sourceTree = "<group>"; };
+		F70F5D942BB60738009E2FF1 /* bishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bishop.swift; sourceTree = "<group>"; };
+		F70F5D962BB608F9009E2FF1 /* dragonHorse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragonHorse.swift; sourceTree = "<group>"; };
+		F70F5D982BB60956009E2FF1 /* hornedFalcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hornedFalcon.swift; sourceTree = "<group>"; };
+		F70F5D9A2BB60A34009E2FF1 /* flyingStag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flyingStag.swift; sourceTree = "<group>"; };
+		F70F5D9C2BB60A90009E2FF1 /* blindTiger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blindTiger.swift; sourceTree = "<group>"; };
+		F70F5D9E2BB60BC3009E2FF1 /* catSword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catSword.swift; sourceTree = "<group>"; };
+		F70F5DA02BB61108009E2FF1 /* copperGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copperGeneral.swift; sourceTree = "<group>"; };
+		F70F5DA22BB611EA009E2FF1 /* sideMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMover.swift; sourceTree = "<group>"; };
+		F70F5DA52BB61230009E2FF1 /* freeBoar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = freeBoar.swift; sourceTree = "<group>"; };
 		F72AAAF12BA221260023E7C7 /* daishogi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daishogi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72AAAF42BA221260023E7C7 /* daishogiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daishogiApp.swift; sourceTree = "<group>"; };
 		F72AAAF62BA221260023E7C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,10 +76,21 @@
 		7B9A11DC2BB007630028B9D1 /* specificPieces */ = {
 			isa = PBXGroup;
 			children = (
-				7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */,
-				F73D69452BB4EF02004F65EF /* goldGeneral.swift */,
-				F70F5D8C2BB5ECF0009E2FF1 /* rook.swift */,
+				F70F5D922BB606BC009E2FF1 /* angryBoar.swift */,
+				F70F5D942BB60738009E2FF1 /* bishop.swift */,
+				F70F5D9C2BB60A90009E2FF1 /* blindTiger.swift */,
+				F70F5D9E2BB60BC3009E2FF1 /* catSword.swift */,
+				F70F5DA02BB61108009E2FF1 /* copperGeneral.swift */,
+				F70F5D962BB608F9009E2FF1 /* dragonHorse.swift */,
 				F70F5D8E2BB5ED46009E2FF1 /* dragonKing.swift */,
+				F70F5D9A2BB60A34009E2FF1 /* flyingStag.swift */,
+				F70F5DA52BB61230009E2FF1 /* freeBoar.swift */,
+				F73D69452BB4EF02004F65EF /* goldGeneral.swift */,
+				F70F5D982BB60956009E2FF1 /* hornedFalcon.swift */,
+				F70F5D8C2BB5ECF0009E2FF1 /* rook.swift */,
+				F70F5DA22BB611EA009E2FF1 /* sideMover.swift */,
+				F70F5D902BB60613009E2FF1 /* soaringEagle.swift */,
+				7B9A11DD2BB0078E0028B9D1 /* violentOx.swift */,
 			);
 			path = specificPieces;
 			sourceTree = "<group>";
@@ -174,16 +207,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70F5D992BB60956009E2FF1 /* hornedFalcon.swift in Sources */,
+				F70F5DA32BB611EA009E2FF1 /* sideMover.swift in Sources */,
+				F70F5DA12BB61108009E2FF1 /* copperGeneral.swift in Sources */,
+				F70F5D9B2BB60A34009E2FF1 /* flyingStag.swift in Sources */,
 				F70F5D8F2BB5ED46009E2FF1 /* dragonKing.swift in Sources */,
+				F70F5DA62BB61230009E2FF1 /* freeBoar.swift in Sources */,
 				F70F5D8D2BB5ECF0009E2FF1 /* rook.swift in Sources */,
+				F70F5D952BB60738009E2FF1 /* bishop.swift in Sources */,
 				F72AAAF72BA221260023E7C7 /* ContentView.swift in Sources */,
 				F73D69442BAFF0F2004F65EF /* helperBits.swift in Sources */,
+				F70F5D9D2BB60A90009E2FF1 /* blindTiger.swift in Sources */,
 				7B9A11DE2BB0078E0028B9D1 /* violentOx.swift in Sources */,
 				F72AAAF52BA221260023E7C7 /* daishogiApp.swift in Sources */,
 				F73D693E2BAD5BC3004F65EF /* tileView.swift in Sources */,
 				F73D69402BAFDE42004F65EF /* boardState.swift in Sources */,
+				F70F5D9F2BB60BC3009E2FF1 /* catSword.swift in Sources */,
 				F73D693C2BAD5B2D004F65EF /* chessBoard.swift in Sources */,
+				F70F5D972BB608F9009E2FF1 /* dragonHorse.swift in Sources */,
+				F70F5D932BB606BC009E2FF1 /* angryBoar.swift in Sources */,
 				F73D69422BAFE9AC004F65EF /* pieceStruct.swift in Sources */,
+				F70F5D912BB60613009E2FF1 /* soaringEagle.swift in Sources */,
 				F73D69462BB4EF02004F65EF /* goldGeneral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

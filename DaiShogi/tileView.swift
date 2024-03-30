@@ -41,7 +41,11 @@ struct tileView: View {
             .frame(width: widthHeight, height: widthHeight)
     }
     var numberCol: some View {
-        Text("\(posOnBoard.col)" != "0" ? "\(posOnBoard.col)" : " ")
+        Text("\(posOnBoard.col)")
+            .frame(width: widthHeight, height: widthHeight)
+    }
+    var empty: some View {
+        Text("")
             .frame(width: widthHeight, height: widthHeight)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  dragonKing.swift
+//  copperGeneral.swift
 //  daishogi
 //
 //  Created by Zachary Abrahamson  on 3/28/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct dragonKing: Piece {
+struct copperGeneral: Piece {
     func calculateMoves() -> [Int] {
         var counter = -1
         return Array(repeating: 0, count: 225).map { moo in
@@ -16,10 +16,11 @@ struct dragonKing: Piece {
         }
     }
     
-    var pieceName: String = "龍王"
-    var pieceID: pieceTypes = .dragonKing
+    var pieceName: String = "銅将"
+    var pieceID: pieceTypes = .copperGeneral
     var promotesTo: Piece? {
-        soaringEagle(isPromoted: true, isWhite: self.isWhite)
+//        sideMover(isPromoted: true, isWhite: self.isWhite)
+        nil
     }
     
     var isPromoted: Bool
