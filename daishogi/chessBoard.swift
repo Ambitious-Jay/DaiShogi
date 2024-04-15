@@ -22,6 +22,12 @@ struct chessBoard: View {
                         }
                     }
                     chessTilesView()
+                        .padding(1)
+                        .border(Color.black, width: 2)
+                        .padding(1)
+//                        .border(Color.darkBkg, width: 5)
+                        .clipShape(.rect(cornerRadius: 5))
+
                 }
                 VStack(spacing: 1) {
                     tileView(posOnBoard: (row: 0, col: 0)).empty
@@ -40,16 +46,19 @@ struct chessTilesView: View {
     @EnvironmentObject var boardstate: boardState
 //    @EnvironmentObject var namespaceobj: nameSpaceObj
     var body: some View {
-        VStack(spacing: 1) {
+        VStack(spacing: 0) {
             ForEach(1..<16) { row in
-                HStack(spacing: 1) {
+                HStack(spacing: 0) {
                     ForEach((1..<16)) { col in
                         let arrayPos = ((row - 1) * 15 + col) - 1
                         
                         boardstate.boardLayout[arrayPos]
                             .overlay {
+//                                boardstate.boardLayout[arrayPos].heldPiece?.
                                 if let heldPiece = boardstate.boardLayout[arrayPos].heldPiece {
                                     heldPiece.chipView
+//                                    heldPiece.
+//                                        .matchedGeometryEffect(id: heldPiece.)
 //                                        .matchedGeometryEffect(id: "movingPiece", in: nil)
                                 }
                             }
@@ -57,6 +66,7 @@ struct chessTilesView: View {
                                 if let movingPiece = boardstate.myHeldPiece {
                                     if (boardstate.validMoves.contains(arrayPos)) {
                                         // Holding a piece and move to a valid tile
+                                        boardstate.boardLayout[movingPiece.pos].heldPiece = nil
                                         if let promoteForm = movingPiece.type.promotesTo,
                                            !movingPiece.type.isPromoted,
                                            (movingPiece.type.isWhite ? (row <= 5) : (row > 10))
@@ -65,13 +75,14 @@ struct chessTilesView: View {
                                         } else {
                                             boardstate.boardLayout[arrayPos].heldPiece = movingPiece.type
                                         }
-                                        boardstate.boardLayout[movingPiece.pos].heldPiece = nil
+                                        
                                     } else {
                                         boardstate.boardLayout[movingPiece.pos].heldPiece = movingPiece.type
                                     }
                                     // Drop the piece
                                     boardstate.validMoves = []
                                     boardstate.myHeldPiece = nil
+                                    boardstate.isWhite.toggle()
                                 } else {
                                     // Not holding a piece
                                     let currentTile = boardstate.boardLayout[arrayPos]

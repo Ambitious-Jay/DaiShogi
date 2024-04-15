@@ -15,6 +15,15 @@ struct daishogiApp: App {
             ContentView()
                 .environmentObject(boardstate)
         }
+        .commands {
+            CommandMenu("Gameplay Edits") {
+                Button("Restart Everything") {
+                    boardstate.resetBoard()
+                    boardstate.isWhite = false
+                }
+                .keyboardShortcut("r")
+            }
+        }
     }
 }
 

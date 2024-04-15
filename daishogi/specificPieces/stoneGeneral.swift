@@ -1,13 +1,13 @@
 //
-//  hornedFalcon.swift
+//  stoneGeneral.swift
 //  daishogi
 //
-//  Created by Zachary Abrahamson  on 3/28/24.
+//  Created by Zachary Abrahamson  on 4/14/24.
 //
 
 import Foundation
 
-struct hornedFalcon: Piece {
+struct stoneGeneral: Piece {
     init(isPromoted: Bool, isWhite: Bool) {
         
         self.isPromoted = isPromoted
@@ -26,10 +26,14 @@ struct hornedFalcon: Piece {
         }
     }
     
-    var pieceName: String = "角鷹"
-    var pieceID: pieceTypes = .hornedFalcon
-    var promotesTo: Piece? = nil
+    var pieceName: String = "石将"
+    var pieceID: pieceTypes = .stoneGeneral
+    var promotesTo: Piece? {
+        goldGeneral(isPromoted: true, isWhite: self.isWhite)
+    }
     
     var isPromoted: Bool
     var isWhite: Bool
+    
+    
 }
