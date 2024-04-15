@@ -31,9 +31,7 @@ struct tileView: View {
             Rectangle()
                 .foregroundStyle(Color.beigie)
                 .frame(width: widthHeight, height: widthHeight)
-                .overlay {
-                    
-                }
+                .border(Color.black, width: 1)
         }
     }
     var numberRow: some View {

@@ -1,13 +1,13 @@
 //
-//  hornedFalcon.swift
+//  whale.swift
 //  daishogi
 //
-//  Created by Zachary Abrahamson  on 3/28/24.
+//  Created by Zachary Abrahamson  on 4/14/24.
 //
 
 import Foundation
 
-struct hornedFalcon: Piece {
+struct whale: Piece {
     init(isPromoted: Bool, isWhite: Bool) {
         
         self.isPromoted = isPromoted
@@ -26,9 +26,11 @@ struct hornedFalcon: Piece {
         }
     }
     
-    var pieceName: String = "角鷹"
-    var pieceID: pieceTypes = .hornedFalcon
-    var promotesTo: Piece? = nil
+    var pieceName: String = "鯨鯢"
+    var pieceID: pieceTypes = .whale
+    var promotesTo: Piece? {
+        nil
+    }
     
     var isPromoted: Bool
     var isWhite: Bool
